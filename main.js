@@ -20,6 +20,7 @@ good.src = "images/good.png";
 
 // variables
 var wid = window.innerWidth ;
+var hei = window.innerHeight;
 pX = wid / 2;
 pY = 591;
 right = 0;
@@ -27,7 +28,7 @@ left = 0;
 oX = 120;
 oY = canvas.height - canvas.height - 50;
 score = 0;
-obsn = canvas.height - (floor.height - piece.height);
+obsn = hei - (floor.height - piece.height);
 gop = 190;
 
 // obstacle coordinates
