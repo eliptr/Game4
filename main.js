@@ -19,8 +19,7 @@ good.src = "images/good.png";
 
 
 // variables
-var wid = window.innerWidth ;
-var hei = window.innerHeight;
+  var wid = window.innerWidth ;
 pX = wid / 2;
 pY = 591;
 right = 0;
@@ -28,7 +27,7 @@ left = 0;
 oX = 120;
 oY = canvas.height - canvas.height - 50;
 score = 0;
-obsn = hei - (floor.height - piece.height);
+obsn = 130;
 gop = 190;
 
 // obstacle coordinates
@@ -76,6 +75,7 @@ function draw() {
     if( pY - piece.height >= obs.y && obstacle[i].y >= pY - piece.height && obstacle[i].y <= pY - piece.height + 1 && pX + piece.width >= obstacle[i].x && pX <= obstacle[i].x) {
     console.log("wad");
     location.reload();
+
     }
 
     if (obstacle[i].y > canvas.height) {
