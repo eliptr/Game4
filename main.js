@@ -27,7 +27,7 @@ left = 0;
 oX = 120;
 oY = canvas.height - canvas.height - 50;
 score = 0;
-obsn = 130;
+obsn = canvas.height - (floor.height + piece.height);
 gop = 190;
 
 // obstacle coordinates
