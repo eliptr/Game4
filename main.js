@@ -27,7 +27,7 @@ left = 0;
 oX = 120;
 oY = canvas.height - canvas.height - 50;
 score = 0;
-obsn = canvas.height - (floor.height + piece.height);
+obsn = canvas.height - (floor.height - piece.height);
 gop = 190;
 
 // obstacle coordinates
@@ -75,7 +75,6 @@ function draw() {
     if( pY - piece.height >= obs.y && obstacle[i].y >= pY - piece.height && obstacle[i].y <= pY - piece.height + 1 && pX + piece.width >= obstacle[i].x && pX <= obstacle[i].x) {
     console.log("wad");
     location.reload();
-
     }
 
     if (obstacle[i].y > canvas.height) {
