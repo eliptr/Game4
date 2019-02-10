@@ -19,9 +19,10 @@ good.src = "images/good.png";
 
 
 // variables
-  var wid = window.innerWidth ;
+var wid = window.innerWidth ;
+var hei = window.innerHeight;
 pX = wid / 2;
-pY = 591;
+pY =  hei - 196;
 right = 0;
 left = 0;
 oX = 120;
@@ -75,7 +76,6 @@ function draw() {
     if( pY - piece.height >= obs.y && obstacle[i].y >= pY - piece.height && obstacle[i].y <= pY - piece.height + 1 && pX + piece.width >= obstacle[i].x && pX <= obstacle[i].x) {
     console.log("wad");
     location.reload();
-
     }
 
     if (obstacle[i].y > canvas.height) {
@@ -115,6 +115,10 @@ function draw() {
 
   if (score > 15) {
     gop === 225;
+  }
+
+  if (score > 16) {
+    obsn === 70;
   }
 
   ctx.font = '25px roboto';
